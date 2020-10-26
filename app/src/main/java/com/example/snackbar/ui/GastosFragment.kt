@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.snackbar.R
+import kotlinx.android.synthetic.main.fragment_gasto.*
 import kotlinx.android.synthetic.main.fragment_gasto.view.*
 
 class GastosFragment : Fragment() {
@@ -18,7 +19,13 @@ class GastosFragment : Fragment() {
        val view = inflater.inflate(R.layout.fragment_gasto, container, false)
 
 
-        view.ed_descricao.text.toString()
+        view.btn_cadastrar.setOnClickListener{
+            val desc = view.ed_descricao.text.toString()
+            val cat = view.ed_categoria.text.toString()
+            val data = view.ed_data.text.toString()
+            val valor = view.ed_valor.text.toString()
+
+        }
 
         return view
     }
