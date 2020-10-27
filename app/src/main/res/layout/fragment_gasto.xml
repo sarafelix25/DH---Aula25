@@ -3,23 +3,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.HomeFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="CADASTRAR"
+        android:textAlignment="center"
+        android:textColor="@color/colorSelected"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical">
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp">
+            android:layout_marginTop="15dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/ed_descricao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:hint="@string/descricao" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -31,6 +46,7 @@
                 android:id="@+id/ed_categoria"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:hint="@string/text_categoria" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -42,6 +58,7 @@
                 android:id="@+id/ed_data"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:hint="@string/text_data" />
         </com.google.android.material.textfield.TextInputLayout>
 
