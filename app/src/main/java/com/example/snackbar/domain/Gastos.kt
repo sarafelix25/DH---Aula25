@@ -8,3 +8,5 @@ data class Gastos (var descricao: String, var categoria: String, var data: Strin
         return "Gastos(descricao='$descricao', categoria='$categoria', data='$data', valor=$valor)"
     }
 }
+
+// gastos

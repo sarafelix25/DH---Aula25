@@ -8,3 +8,5 @@ class Usuario constructor(val id: Int,  var userName: String, var senha: String)
         return "Usuario(id=$id, userName='$userName', senha='$senha')"
     }
 }
+
+//user
